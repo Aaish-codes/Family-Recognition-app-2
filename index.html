@@ -1,0 +1,58 @@
+ 
+<html>
+  <head>
+    <title>Image recognition</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+   <link rel="stylesheet" href="style.css">
+  
+  </head>
+
+  <body>
+  <div class="container">
+    
+    <center>
+      <h1 class="btn btn-default heading"> Object recognizing app </h1>
+      <br><br>
+
+      <p style="font-size: 22px;">Model is trained to identify the following people: </p>
+      <b class="objectsnames">
+        <hr>
+        Mother
+        <hr>
+        Daughter
+        <hr>
+        Father
+        <hr>
+      </b>
+
+      
+      <label>Webcam View - </label>
+
+      <br><br>
+       <div id="camera"> </div>
+      <br><button class="btn btn-primary" onclick="captureimg();"> Capture Image</button><br>
+      <br>
+      <label> Result- </label>
+      <br><br>
+      <div id="result"> </div>
+      <br><br>
+       <button class="btn btn-primary" onclick="checkimg();"> predict image</button>
+       <br> <br>
+    
+      <p style="font-size: 22px;">Object : <span id="result-object"></span> </p>
+      <p style="font-size: 22px;">Accuracy : <span id="result-object-accuracy"></span> </p>
+    </center>
+
+  </div>
+<script src="main.js"></script>
+
+  </body>
+</html>
+
+ 

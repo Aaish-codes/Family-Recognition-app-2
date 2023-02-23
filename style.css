@@ -1,0 +1,27 @@
+body{
+    background-color: rgb(130, 242, 252);
+}
+
+.heading{
+    width: 80%;
+    font-weight: bold;
+    font-size: large;
+}
+
+label{
+    background-color: white;
+}
+
+#camera , #result{
+    border-width: 3px;
+    border-color: black;
+    border-style: dotted;
+    width: 350px;
+    height: 300px;
+}
+
+#result-object , #result-object-accuracy{
+    font-weight: bold;
+    font-size: 30px;
+    color: black;
+}
